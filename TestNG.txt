@@ -237,3 +237,78 @@ TO INTITILIZE@FINDBY()
   HAY ARE YOU THERE 
  IAM IN CLASS FROM 12 PM 
 
+
+
+
+
+git ( local repo)
+git is a software 
+which is installed in local macine 
+--------------------------------------
+git hub (global repo)
+is a service provider fopr git 
+
+with help of git and git hub
+
+1) clone 2) push 3) pull  these are 
+=================================
+1) clone=
+dat are present in url that ur access in your local repo
+//
+is trasfer the data from global repo to local repo
+
+it done only ones it will give complete data
+=================================
+2)push=
+trasfering data from local to global repo
+-----------------------------
+3) pull =
+used to tarsfer the data from global repo to local repo
+
+it will done frequently 
+it will give data which is recently upadted 
+
+
+
+
+operation performed by git and git hub
+
+https://github.com/Raghwendr7/Vtiger_CRM.git
+
+------------------
+
+create a new repository on the command 
+line
+
+echo "# Vtiger_CRM" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Raghwendr7/Vtiger_CRM.git
+git push -u origin main
+------------------------------------
+
+
+HOW TO GENERATE A TOKEN
+
+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
+
+
+
+------------------------
+
+hOW TO PERFOEMow to get floting  PUSH OPERATIONare you ok
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+package assignment;
+
+import java.time.Duration;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class OrngANs {
+	
+	
+	public static void main(String[] args) { 
+		
+	WebDriver d= new ChromeDriver();	
+	d.manage().window().maximize();
+	d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	
+	OrngLogin lp= new OrngLogin(d);
+	lp.Login("Admin", "admin123");
+
+	 
+	OrgLogOut hp= new OrgLogOut(d);
+	 d.findElement(By.xpath("//p[@class='oxd-userdropdown-name']")).click();
+	hp.logout();
+	 
+	 
+	
+	 
+	 
+}}

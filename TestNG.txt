@@ -1,0 +1,226 @@
+
+testNG(Next Generation)
+____________________________________________________________
+1)its a tool which is used in advance sel 
+2)its is unit test tool
+3)its a combination of j-unit and n-unit
+4)TDD [test drivern developement]
+__________________________________________
+main use of testng to perform 
+1)batch execution
+2)parallel execution
+3)group execution
+4)cross-browser execution
+without any manual interatioin
+___________________________________________________
+
+With help of testng we will get html report
+
+=jenkins used to share report that generated 
+
+__________________________________________________
+
+main method is not used in test ng 
+
+@ acts as a main method 
+@test you can call n number of annotation in a class
+
+exection flow depen on aplhabetical order Priority
+execution times used for innvocationcount
+
+_______________________________
+assert
+assersion
+checkpoint 
+
+___________
+@test- acts as a  main-method*
+
+logics and code in test
+---------------------------
+@parameter
+------------------
+@before method*
+login operation
+-----------------
+@berfore class*
+executed only ones 
+open browser
+--------------------
+@before suits
+@before test
+-------------------
+@after calss*
+executed only ones 
+open browser
+----------------
+@after test 
+@after suite
+---------------------
+@after method*
+log out operation
+-------------------
+@dataprovider  
+
+
+1)priority=1
+2)invocationCount
+3)dependsonmethod
+--------------------
+assert
+used to compare 
+Assert.assertEquals("pune", "deccan");
+-------------------------
+
+skip depends on method used to skip
+
+btach execution is used to save time 
+
+1single class 
+2)multiple class
+3) pacakage
+________________________________
+batchexecution
+________________________________
+
+parallel execution
+----------------------------
+both execute 
+
+EdgeDriver()
+
+________________________
+Groupexecution
+
+in all fetaure only one feature then we go for groupexecution
+
+give group name
+
+
+-------------------
+cross-broser execution
+more than 1 browser
+
+@parameter used in
+
+
+=maximum therad count is with in 5 window in  browser
+
+@parameters is used to control tabs
+assign name for parameter
+
+  <test thread-count="5" name="Test">
+  <parameter name="pune" value="Chrome"></parameter>
+ <classes>
+ 
+  
+  <class name="parallel.CrossBrowser"></class>
+
+</classes>
+  </test> <!-- Test -->
+------------------------------
+
+
+@bM-login
+@test-logic
+@aM-logout
+....................
+@bM-login
+@test-logic
+@aM-logout
+----------------------
+==============
+-----------------------
+@bC  open browser
+@bm 1
+@tst
+@Am
+@Bm 2
+@test
+@am
+@ac close browser
+
+
+
+===========================
+--------------------------
+assert asserssion checkpoint = to fail testng  class
+-----------------
+soft assert
+it is  used in only in non mandetory field 
+non static
+
+if condition  satisfied or not satisfied willbe release to next line and  all execuete
+
+--------------------
+hard assert =
+it is a condition used in only mandetory field
+static 
+if condition is not satisfied after using it all remain lines skip
+
+if condition is satisfied after using it all remain executed
+
+---------------
+main 3 static  methods
+1)assert eqals =
+Assert.assertEquals("raghu", "g");
+------------------------
+2)assert true =
+Assert.assertTrue(false);
+--------------------------
+3)assert false
+Assert.assertTrue(false);
+
+====================================
+--------------------------------
+Soft assert 
+1)assert eqals =
+Assert.assertEquals("raghu", "g");
+------------------------
+2)assert true =
+Assert.assertTrue(false);
+--------------------------
+3)assert false
+Assert.assertTrue(false);
+----------------------
+4)assert all
+Assert.assertall();
+to make all condition false
+
+===================
+POM
+USED TO AVOID FREQUENTLY ACCORING PROBLEMS
+=
+project object module
+object repo
+element repo
+========
+Advantages of PoM
+-------------------
+1)to avid stale element REFRANCE  exeception
+2)resuablity OF CODE 
+3)READABLITY OF CODE 
+4) REDUCE MAINATNACE EFFECT
+--------------
+WAHT IS POM
+IT IS ADESGIN PATTERN= 
+ WHICH GIVES SOLUTION FOR FREQUENTLY ACCOURING PROBLRMS IN  AUTOMATION TESTING /DEVELOPMENT 
+
+PROCEDURES OF POM 
+IT HAVING 8 PROCEDURE 
+1)CREATE SEPRATE JAVA CLASS FOR ALL PAGES AND SUFFUX PAGE (LOGIN PAGE)
+(HOME PAGE)  
+2)PASS ALL THE CREDENTIAL IN RESPECTIVE JAVA CLASS
+3)make elemeunt as private and call getter method
+4)CALL @findBY()= EVERY TIME FIND FRESHLY
+USEING IT TO AVID STALE ELEMENT EXEX
+---------------------
+@FINDBY(ID="VALLUE')PRIVATE WEBLELE ELE; 
+-------------------------------
+5)PAGEFACTORY.INITELELEMENT()=
+TO INTITILIZE@FINDBY()
+
+6)CALL ONE BASE CLASS
+7)CALL ONE ACTION METHOD 
+8)ACTION METHOD TAKE TO NEXT LANDING PAGE 
+
